@@ -198,7 +198,8 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+  -webkit-appearance: button; /* Soporte Safari/iOS antiguos */
+  appearance: button;         /* Propiedad estándar actual */
 }
 
 /**
@@ -290,8 +291,9 @@ textarea {
  */
 
 [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield; /* Soporte Safari/iOS antiguos */
+  appearance: textfield;         /* Propiedad estándar actual */
+  outline-offset: -2px;          /* Ajuste visual */
 }
 
 /**
