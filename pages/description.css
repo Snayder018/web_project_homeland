@@ -1,0 +1,26 @@
+.descripción__contenido {
+  margen: 0 auto 0 0;
+  ancho máximo: 722px;
+  /*altura máxima: 182px;*/
+  familia de fuentes: "Inter";
+  peso de fuente: 400;
+  tamaño de fuente: 16px;
+  altura de la línea: 26px;
+  alineación de texto: început;
+}
+@media pantalla y (ancho máximo: 768px) {
+  .descripción__contenido {
+    /*ancho máximo: 720px;*/
+    /* altura máxima: 182px;*/
+    tamaño de fuente: 16px;
+    altura de la línea: 26px;
+  }
+}
+@media pantalla y (ancho máximo: 320px) {
+  .descripción__contenido {
+    /* ancho máximo: 288px;*/
+    /*altura máxima: 442px;*/
+    tamaño de fuente: 16px;
+    altura de la línea: 26px;
+  }
+}

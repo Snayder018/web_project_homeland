@@ -1,3 +1,4 @@
 # Tripleten web_project_homeland
 ANDERSON SNAYDER CORTEZ 
-Es un sitio web dedicado a la temática de la patria, diseñado con un enfoque adaptable para diferentes dispositivos como móviles, tabletas y computadoras de escritorio. Su estructura responde a los requerimientos actuales y a futuro, está pensado para ser optimizado e incorporar más contenido según las necesidades o solicitudes que se presenten.
+ Es una página que habla sobre la patria la cual se trata de adaptar para las pantalones de mobile, tablets y pc de escritorio se ajusta a las necesidades que se piden y en un futuro optimizar y agregar información sobre lo que se necesita o solicitar .
+https://github.com/Snayder018/web_project_homeland?tab=

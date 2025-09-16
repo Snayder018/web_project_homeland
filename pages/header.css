@@ -1,0 +1,80 @@
+.encabezado__logotipo {
+  altura máxima: 69px;
+  ancho máximo: 255px;
+  acolchado: 34px 0 0;
+  margen: 0 auto;
+  pantalla: bloc;
+}
+.encabezado__contenido {
+  margen: 92px auto;
+}
+.encabezado__título {
+  peso de fuente: 900;
+  alineación de texto: centro;
+  margen: 0 auto;
+  tamaño de fuente: 96px;
+  altura de la línea: 100px;
+  ancho máximo: 720px;
+  familia de fuentes: "Inter";
+}
+
+.encabezado__subtítulo {
+  alineación de texto: centro;
+  margen: 32px auto 64px;
+  ancho máximo: 720px;
+  tamaño de fuente: 30px;
+  altura de la línea: 36px;
+  peso de fuente: 400;
+  familia de fuentes: "Inter";
+}
+.encabezado__imagen {
+  ancho máximo: 984px;
+  ancho: 100%;
+  altura máxima: 615px;
+  margen: 0 auto;
+  pantalla: bloc;
+}
+@media pantalla y (ancho máximo: 768px) {
+  /*.header__logo {
+    /*ancho máximo: 254px;
+    /*altura máxima: 66px;
+  }*/
+  .encabezado__título {
+    ancho máximo: 530px;
+    /* altura máxima: 158px;*/
+    tamaño de fuente: 75px;
+    altura de la línea: 79px;
+  }
+  .encabezado__subtítulo {
+    /*ancho máximo: 720px;*/
+    /* altura máxima: 72px;*/
+    tamaño de fuente: 30px;
+    altura de la línea: 36px;
+  }
+  .encabezado__imagen {
+    /* ancho máximo: 768px;*/
+    ancho: 100%;
+  }
+}
+@media pantalla y (ancho máximo: 320px) {
+  .encabezado__logotipo {
+    ancho máximo: 188px;
+    altura máxima: 52px;
+  }
+  .encabezado__título {
+    /* ancho máximo: 228px;*/
+    /* altura máxima: 88px;*/
+    tamaño de fuente: 40px;
+    altura de la línea: 44px;
+  }
+  .encabezado__subtítulo {
+    /* ancho máximo: 228px;*/
+    /* altura máxima: 40px;*/
+    tamaño de fuente: 16px;
+    altura de la línea: 20px;
+  }
+  .encabezado__imagen {
+    ancho máximo: 320px;
+    altura máxima: 200px;
+  }
+}

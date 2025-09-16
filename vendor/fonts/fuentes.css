@@ -1,15 +1,20 @@
- @font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/web/Inter-Regular.woff2') format('woff2');
+@font-face {
+  familia de fuentes: "Inter";
+  estilo fuente: normal;
+  peso de fuente: 400;
+  src: URL("./fonts/Inter-Regular.woff2") formato("woff2");
 }
 
 @font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/web/Inter-Bold.woff2') format('woff2');
+  familia de fuentes: "Inter";
+  estilo fuente: normal;
+  peso de fuente: 500;
+  src: URL("./fonts/Inter-Medium.woff2") formato("woff2");
 }
 
-/* Y así con las otras variantes que necesites... */
+@font-face {
+  familia de fuentes: "Inter";
+  estilo fuente: normal;
+  peso de fuente: 900;
+  src: URL("./fonts/Inter-Black.woff2") formato("woff2");
+}

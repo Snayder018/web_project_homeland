@@ -1,0 +1,87 @@
+pages/content.css 
+.contenido {
+  margen: 0 auto;
+  ancho máximo: 984px;
+  /*altura máxima: 607px;*/
+}
+.content__title {
+  ancho máximo: 830px;
+  /* altura máxima: 174px;*/
+  margen: 0 auto 40px 0;
+  familia de fuentes: "Inter";
+  peso de fuente: 900;
+  tamaño de fuente: 54px;
+  altura de la línea: 58px;
+  alineación de texto: început;
+  envoltura de texto: balance;
+}
+.contenido__descripción {
+  margen: 0 auto 10px 0;
+  ancho máximo: 738px;
+  /*altura máxima: 136px;*/
+  familia de fuentes: "Inter";
+  peso de fuente: 400;
+  tamaño de fuente: 24px;
+  altura de la línea: 34px;
+  alineación de texto: început;
+}
+.content__autor {
+  margen: 0 auto 32px 0;
+  ancho máximo: 732px;
+  /*altura máxima: 34px;*/
+  alineación de texto: fin;
+  familia de fuentes: "Inter";
+  peso de fuente: 400;
+  tamaño de fuente: 24px;
+  altura de la línea: 34px;
+}
+@media pantalla y (ancho máximo: 768px) {
+  .contenido {
+    /* ancho máximo: 720px;*/
+    /* altura máxima: 573px;*/
+    margen: 0 auto;
+  }
+  .content__title {
+    /* ancho máximo: 707px;*/
+    /* altura máxima: 147px;*/
+    tamaño de fuente: 45px;
+    altura de la línea: 49px;
+    envoltura de texto: balance;
+  }
+  .contenido__descripción {
+    /*ancho máximo: 720px;*/
+    /*altura máxima: 136px;*/
+    tamaño de fuente: 24px;
+    altura de la línea: 34px;
+  }
+  .content__autor {
+    /*ancho máximo: 720px;*/
+    /* altura máxima: 34px;*/
+    tamaño de fuente: 24px;
+    altura de la línea: 34px;
+  }
+}
+@media pantalla y (ancho máximo: 320px) {
+  /*.content {
+ancho máximo: 288px;*/
+  /*altura máxima: 1033px;
+  }*/
+  .content__title {
+    /*ancho máximo: 288px;*/
+    /* altura máxima: 175px;*/
+    tamaño de fuente: 32px;
+    altura de la línea: 35px;
+  }
+  .contenido__descripción {
+    /* ancho máximo: 288px;*/
+    /*altura máxima: 300px;*/
+    tamaño de fuente: 24px;
+    altura de la línea: 30px;
+  }
+  .content__autor {
+    /* ancho máximo: 288px;*/
+    /*altura máxima: 34px;*/
+    tamaño de fuente: 24px;
+    altura de la línea: 34px;
+  }
+}

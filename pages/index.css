@@ -1,9 +1,7 @@
- @import url(../vendor/normalize.css);
-@import url(../vendor/fonts.css);
-@import url(../blocks/page.css);
-@import url(../blocks/header.css);
-@import url(../blocks/content.css);
-@import url(../blocks/footer.css);
-@import url(../blocks/description.css);
-@import url(../blocks/gallery.css);
-@import url(../blocks/places.css);
+@importar url(../vendor/normalize.css);
+@importar url(../vânzător/fonts.css);
+@importar url(../pages/page.css);
+@importar url(../pages/header.css);
+@importar url(../pages/content.css);
+@importar url(../pages/footer.css);
+@importar url(../pages/description.css);

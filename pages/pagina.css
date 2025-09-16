@@ -1,0 +1,20 @@
+.página {
+  color de fondo: #2a2c2f;
+  color: #ffffff;
+  ancho: 100%;
+  altura: 100%;
+}
+@media pantalla y (ancho máximo: 768px) {
+  .página {
+    ancho máximo: 768px;
+    ancho: 100%;
+    altura: 100%;
+  }
+}
+@media pantalla y (ancho máximo: 320px) {
+  .página {
+    ancho máximo: 320px;
+    ancho: 100%;
+    altura: 100%;
+  }
+}
