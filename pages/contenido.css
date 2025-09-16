@@ -1,87 +1,91 @@
-pages/content.css 
 .contenido {
-  margen: 0 auto;
-  ancho máximo: 984px;
-  /*altura máxima: 607px;*/
+  margin: 0 auto;
+  max-width: 984px;
+  /*max-height: 607px;*/
 }
+
 .content__title {
-  ancho máximo: 830px;
-  /* altura máxima: 174px;*/
-  margen: 0 auto 40px 0;
-  familia de fuentes: "Inter";
-  peso de fuente: 900;
-  tamaño de fuente: 54px;
-  altura de la línea: 58px;
-  alineación de texto: început;
-  envoltura de texto: balance;
+  max-width: 830px;
+  /*max-height: 174px;*/
+  margin: 0 auto 40px 0;
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  text-align: start;
+  text-wrap: balance;
 }
+
 .contenido__descripción {
-  margen: 0 auto 10px 0;
-  ancho máximo: 738px;
-  /*altura máxima: 136px;*/
-  familia de fuentes: "Inter";
-  peso de fuente: 400;
-  tamaño de fuente: 24px;
-  altura de la línea: 34px;
-  alineación de texto: început;
+  margin: 0 auto 10px 0;
+  max-width: 738px;
+  /*max-height: 136px;*/
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: start;
 }
+
 .content__autor {
-  margen: 0 auto 32px 0;
-  ancho máximo: 732px;
-  /*altura máxima: 34px;*/
-  alineación de texto: fin;
-  familia de fuentes: "Inter";
-  peso de fuente: 400;
-  tamaño de fuente: 24px;
-  altura de la línea: 34px;
+  margin: 0 auto 32px 0;
+  max-width: 732px;
+  /*max-height: 34px;*/
+  text-align: end;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
 }
-@media pantalla y (ancho máximo: 768px) {
+
+@media screen and (max-width: 768px) {
   .contenido {
-    /* ancho máximo: 720px;*/
-    /* altura máxima: 573px;*/
-    margen: 0 auto;
+    /* max-width: 720px;*/
+    /* max-height: 573px;*/
+    margin: 0 auto;
   }
   .content__title {
-    /* ancho máximo: 707px;*/
-    /* altura máxima: 147px;*/
-    tamaño de fuente: 45px;
-    altura de la línea: 49px;
-    envoltura de texto: balance;
+    /* max-width: 707px;*/
+    /* max-height: 147px;*/
+    font-size: 45px;
+    line-height: 49px;
+    text-wrap: balance;
   }
   .contenido__descripción {
-    /*ancho máximo: 720px;*/
-    /*altura máxima: 136px;*/
-    tamaño de fuente: 24px;
-    altura de la línea: 34px;
+    /*max-width: 720px;*/
+    /*max-height: 136px;*/
+    font-size: 24px;
+    line-height: 34px;
   }
   .content__autor {
-    /*ancho máximo: 720px;*/
-    /* altura máxima: 34px;*/
-    tamaño de fuente: 24px;
-    altura de la línea: 34px;
+    /*max-width: 720px;*/
+    /* max-height: 34px;*/
+    font-size: 24px;
+    line-height: 34px;
   }
 }
-@media pantalla y (ancho máximo: 320px) {
-  /*.content {
-ancho máximo: 288px;*/
-  /*altura máxima: 1033px;
+
+@media screen and (max-width: 320px) {
+  /* .content {
+  max-width: 288px;*/
+  /*max-height: 1033px;
   }*/
   .content__title {
-    /*ancho máximo: 288px;*/
-    /* altura máxima: 175px;*/
-    tamaño de fuente: 32px;
-    altura de la línea: 35px;
+    /*max-width: 288px;*/
+    /* max-height: 175px;*/
+    font-size: 32px;
+    line-height: 35px;
   }
   .contenido__descripción {
-    /* ancho máximo: 288px;*/
-    /*altura máxima: 300px;*/
-    tamaño de fuente: 24px;
-    altura de la línea: 30px;
+    /* max-width: 288px;*/
+    /*max-height: 300px;*/
+    font-size: 24px;
+    line-height: 30px;
   }
   .content__autor {
-    /* ancho máximo: 288px;*/
-    /*altura máxima: 34px;*/
-    tamaño de fuente: 24px;
-    altura de la línea: 34px;
+    /* max-width: 288px;*/
+    /*max-height: 34px;*/
+    font-size: 24px;
+    line-height: 34px;
   }
 }
