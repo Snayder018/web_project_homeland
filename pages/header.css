@@ -1,4 +1,4 @@
-.encabezado__logotipo {
+.header__logo {
   max-height: 69px;
   max-width: 255px;
   padding: 34px 0 0;
@@ -6,11 +6,11 @@
   display: block;
 }
 
-.encabezado__contenido {
+.header__content {
   margin: 92px auto;
 }
 
-.encabezado__título {
+.header__title {
   font-weight: 900;
   text-align: center;
   margin: 0 auto;
@@ -20,7 +20,7 @@
   font-family: "Inter";
 }
 
-.encabezado__subtítulo {
+.header__subtitle {
   text-align: center;
   margin: 32px auto 64px;
   max-width: 720px;
@@ -30,7 +30,7 @@
   font-family: "Inter";
 }
 
-.encabezado__imagen {
+.header__image {
   max-width: 984px;
   width: 100%;
   max-height: 615px;
@@ -40,45 +40,45 @@
 
 @media screen and (max-width: 768px) {
   /* .header__logo {
-     max-width: 254px;
-     max-height: 66px;
-  } */
-  .encabezado__título {
+      max-width: 254px;
+      max-height: 66px;
+   } */
+  .header__title {
     max-width: 530px;
     /* max-height: 158px; */
     font-size: 75px;
     line-height: 79px;
   }
-  .encabezado__subtítulo {
+  .header__subtitle {
     /* max-width: 720px; */
     /* max-height: 72px; */
     font-size: 30px;
     line-height: 36px;
   }
-  .encabezado__imagen {
+  .header__image {
     /* max-width: 768px; */
     width: 100%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .encabezado__logotipo {
+  .header__logo {
     max-width: 188px;
     max-height: 52px;
   }
-  .encabezado__título {
+  .header__title {
     /* max-width: 228px; */
     /* max-height: 88px; */
     font-size: 40px;
     line-height: 44px;
   }
-  .encabezado__subtítulo {
+  .header__subtitle {
     /* max-width: 228px; */
     /* max-height: 40px; */
     font-size: 16px;
     line-height: 20px;
   }
-  .encabezado__imagen {
+  .header__image {
     max-width: 320px;
     max-height: 200px;
   }

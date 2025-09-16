@@ -1,48 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-  <cabeza>
-    <meta juego de caracteres="UTF-8" />
-    <meta nombre="ventana gráfica" contenido="ancho=ancho del dispositivo, escala inicial=1,0" />
-    <meta nombre="descripción" contenido="Patria triplete" />
-    <meta nombre="autor" contenido="Snayder " />
-    <meta nombre="palabras clave" contenido="html,css,js" />
-    <enlace rel="hoja de estilo" href="./pages/index.css" />
-    <enlace rel="hoja de estilo" href="./vendedor/fonts.css" />
-    <título>patria</título>
-  </cabeza>
-  <cuerpo clase="página">
-    <encabezado clase="encabezado">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Patria triplete" />
+    <meta name="author" content="Snayder " />
+    <meta name="keywords" content="html,css,js" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="./vendor/fonts.css" />
+    <title>patria</title>
+  </head>
+  <body class="page">
+    <header class="header">
       <img
         src="./images/logotipo.svg"
-        clase="encabezado__logotipo"
+        class="header__logo"
         alt="Galería TripleTen"
       />
-
-      <div clase="encabezado__contenido">
-        <h1 clase="encabezado__título">De patria a patria</h1>
-        <h2 clase="encabezado__subtítulo">
-       Un viaje épicode Kentuckya Burindi pasando por Gales y Ucrania 
+      <div class="header__content">
+        <h1 class="header__title">De patria a patria</h1>
+        <h2 class="header__subtitle">
+          Un viaje épico de Kentucky a Burindi pasando por Gales y Ucrania
         </h2>
         <img
           src="./images/fondo_paisaje.png"
           alt="paisaje a la orilla del mar"
-          clase="encabezado__imagen"
+          class="header__image"
         />
       </div>
-    </encabezado>
-    <principal clase="contenido">
-      <h2 clase="content__title">
-        Conoce un poco mejor los lugares de losque proceden tus colegas en línea
+    </header>
+    <main class="content">
+      <h2 class="content__title">
+        Conoce un poco mejor los lugares de los que proceden tus colegas en línea
       </h2>
-      <p clase="contenido__descripción">
+      <p class="description__content">
         Todo ser humano es un artista, un ser de la libertad, llamado a
         participar en la transformación y reforma de las condiciones, el
         pensamiento y las estructuras que conforman e influyen en nuestras
         vidas.
       </p>
-      <p clase="content__autor">— José Beuys</p>
-      <sección clase="descripción">
-        <p clase="descripción__contenido">
+      <p class="content__author">— José Beuys</p>
+      <section class="description">
+        <p class="description__content">
           La ciudad de TripleTen ha reunido a profesionales de diferentes
           rincones del mundo. Hoy, la Galería de Arte TripleTen se enorgullece
           de presentar historias y fotografías de algunas de las personas que
@@ -53,11 +52,21 @@
           arte visual dedicada a tu ciudad natal. No importa de dinero mares, núms
           alegra que seas nuestro vecino.
         </p>
-      </sección>
-    </principal>
-    <pie de página clase="pie de página">
-        <p class="footer__copyright">&#415; 2025. Snayder Cortez</p>
-       </footer >
-    </div>
+      </section>
+      <section class="gallery">
+  <img src="./images/item_01.png" alt="una casita en el bosque" class="gallery__item" />
+  <img src="./images/item_02.png" alt="una cueva en la playa" class="gallery__item" />
+  <img src="./images/item_03.png" alt="una playa en el anochecer" class="gallery__item" />
+  <img src="./images/item_04.png" alt="el lago en la montaña" class="gallery__item" />
+  <img src="./images/item_05.png" alt="una choza en la montaña nevada" class="gallery__item" />
+  <img src="./images/item_06.png" alt="un gran rio en el bosque" class="gallery__item" />
+  <img src="./images/item_07.png" alt="una montaña en el atardecer" class="gallery__item" />
+  <img src="./images/item_08.png" alt="una cabaña en el bosque" class="gallery__item" />
+  <img src="./images/item_09.png" alt="un rio en el atardecer" class="gallery__item" />
+</section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">&#169; 2025. Snayder Cortez</p>
+    </footer>
   </body>
 </html>
