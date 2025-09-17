@@ -1,10 +1,9 @@
-.contenido {
+.content {
   margin: 0 auto;
   max-width: 984px;
 }
 .content__title {
   max-width: 830px;
-  /* max-height: 174px;*/
   margin: 0 auto 40px 0;
   font-family: "Inter";
   font-weight: 900;
@@ -12,4 +11,35 @@
   line-height: 58px;
   text-align: start;
   text-wrap: balance;
+}
+
+.content__author {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  font-family: "Inter";
+  margin: 20px 0 0 auto;
+  max-width: 173px;
+}
+
+@media screen and (max-width: 768px) {
+  .content__title {
+    max-width: 720px;
+    font-size: 45px;
+    line-height: 49px;
+  }
+  .content__author {
+    margin: 20px 0 0 auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__title {
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .content__author {
+    margin: 20px 0 0 auto;
+  }
 }
