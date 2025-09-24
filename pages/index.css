@@ -1,9 +1,9 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
-@import url(./page.css);
-@import url(./header.css);
-@import url(./content.css);
-@import url(./description.css);
-@import url(./footer.css);
-@import url(./gallery.css);
+@import url(../blocks/pagina.css);
+@import url(../blocks/header.css);
+@import url(../blocks/contenido.css);
+@import url(../blocks/description.css);
+@import url(../blocks/footer.css);
+
 
