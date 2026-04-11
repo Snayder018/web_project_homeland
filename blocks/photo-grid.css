@@ -1,6 +1,7 @@
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  /* CAMBIO CLAVE: Forzamos 4 columnas en lugar de dejarlo al azar con auto-fit */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 16px;
   margin: 0 auto;
   padding: 92px 0;
@@ -9,13 +10,22 @@
 
 .photo-grid__item {
   width: 100%;
+  aspect-ratio: 1 / 1; /* Esto garantiza que sean cuadrados perfectos */
   object-fit: cover;
-  aspect-ratio: 1 / 1;
+  display: block;
 }
 
-@media screen and (max-width: 768px) {
+/* Ajuste para que en tablets y móviles no se vea todo apretado */
+@media screen and (max-width: 1024px) {
   .photo-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
     padding: 64px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .photo-grid {
+    grid-template-columns: 1fr; /* 1 sola columna en móviles muy pequeños */
     gap: 8px;
   }
 }
