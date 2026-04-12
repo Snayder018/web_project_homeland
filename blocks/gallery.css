@@ -1,4 +1,5 @@
-.places {
+
+.gallery {
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -8,15 +9,14 @@
   padding: 92px 0;
 }
 
-/* 🔥 CAMBIO CLAVE: El Grid ahora vive en .place para que el título y el contenido se alineen */
+
 .place {
   display: grid;
-  grid-template-columns: 460px 1fr; /* Mantenemos tus 460px */
+  grid-template-columns: 460px 1fr;
   column-gap: 40px;
   align-items: start;
 }
 
-/* ✅ TÍTULO: Ahora se posiciona en la primera columna */
 .place__title {
   grid-column: 1; 
   font-size: 72px;
@@ -26,16 +26,12 @@
   max-width: 460px;
 }
 
-/* ✅ CONTENEDOR DE CONTENIDO: 
-   Usamos display: contents para que .place__left y .place__right 
-   se alineen con el grid del padre (.place) */
 .place__content {
   display: contents; 
 }
 
-/* ✅ COLUMNA IZQUIERDA (Imagen y Botón) */
 .place__left {
-  grid-column: 1; /* Debajo del título */
+  grid-column: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -43,12 +39,11 @@
 
 .place__image {
   width: 100%;
-  max-width: 460px; /* Respetamos tu medida */
+  max-width: 460px;
   height: auto;
   object-fit: cover;
 }
 
-/* ✅ BOTÓN (RESPETADO TAL CUAL LO TENÍAS) */
 .place__link {
   display: inline-block;
   background: linear-gradient(180deg, #00a3ff 0%, #004a99 100%);
@@ -64,20 +59,15 @@
   transition: opacity 0.3s ease;
 }
 
-.place__link:hover {
-  background: linear-gradient(180deg, #008be6 0%, #003a78 100%);
-}
-
-/* ✅ COLUMNA DERECHA (Artistas y Párrafos) */
 .place__right {
-  grid-column: 2; /* Segunda columna */
-  grid-row: 1 / span 2; /* 🔥 ESTO HACE QUE SE ALINEE CON EL TÍTULO */
+  grid-column: 2;
+  grid-row: 1 / span 2; 
   max-width: 484px;
   display: flex;
   flex-direction: column;
 }
 
-/* ✅ ESTILOS DE TEXTO (RESPETADOS) */
+
 .place__artist-title {
   font-size: 12px;
   font-weight: 400;
