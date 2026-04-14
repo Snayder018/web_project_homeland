@@ -1,91 +1,31 @@
-
 .gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  max-width: 984px;
-  width: 100%;
+  display: grid;
+  /* CAMBIO CLAVE: Forzamos 4 columnas en lugar de dejarlo al azar con auto-fit */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 16px;
   margin: 0 auto;
   padding: 92px 0;
+  max-width: 1184px;
 }
 
-
-.place {
-  display: grid;
-  grid-template-columns: 460px 1fr;
-  column-gap: 40px;
-  align-items: start;
-}
-
-.place__title {
-  grid-column: 1; 
-  font-size: 72px;
-  line-height: 76px;
-  font-weight: 900;
-  margin: 0 0 48px 0;
-  max-width: 460px;
-}
-
-.place__content {
-  display: contents; 
-}
-
-.place__left {
-  grid-column: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.place__image {
+.gallery__image {
   width: 100%;
-  max-width: 460px;
-  height: auto;
+  aspect-ratio: 1 / 1; /* Esto garantiza que sean cuadrados perfectos */
   object-fit: cover;
+  display: block;
 }
 
-.place__link {
-  display: inline-block;
-  background: linear-gradient(180deg, #00a3ff 0%, #004a99 100%);
-  color: #fff;
-  text-align: center;
-  padding: 13px 20px;
-  border-radius: 4px;
-  font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-  width: fit-content;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: opacity 0.3s ease;
+/* Ajuste para que en tablets y móviles no se vea todo apretado */
+@media screen and (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    padding: 64px 16px;
+  }
 }
 
-.place__right {
-  grid-column: 2;
-  grid-row: 1 / span 2; 
-  max-width: 484px;
-  display: flex;
-  flex-direction: column;
-}
-
-
-.place__artist-title {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #aaaaaa;
-  margin: 0 0 8px 0;
-}
-
-.place__artist-name {
-  font-size: 18px;
-  line-height: 22px;
-  margin: 0 0 32px 0;
-}
-
-.place__paragraph {
-  font-size: 18px;
-  line-height: 1.63;
-  color: #fff;
-  margin: 0 0 25px 0;
+@media screen and (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 sola columna en móviles muy pequeños */
+    gap: 8px;
+  }
 }
