@@ -1,0 +1,29 @@
+.intro {
+  max-width: 980px;
+  margin: 92px auto 0;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.content__title {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  margin: 0 0 40px;
+  max-width: 683px;
+}
+
+.content__quote {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0 0 8px;
+  max-width: 683px;
+}
+
+.content__author {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+}
