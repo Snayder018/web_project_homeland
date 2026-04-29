@@ -1,53 +1,56 @@
+
+
 .places {
-  max-width: 987px; /* Asegura que no exceda el ancho de diseño */
-  margin: 0 auto 92px; /* Margen inferior ajustado al brief */
+  max-width: 987px;
+  margin: 0 auto 92px;
   padding: 0 16px;
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
 
+
 .places__item {
   display: grid;
-  /* Combinación de valor absoluto y relativo para escalabilidad */
-  grid-template-columns: 460px 1fr; 
+  grid-template-columns: 1fr 1fr;  
   column-gap: 40px;
-  row-gap: 48px;
+  row-gap: 24px;
   grid-template-areas:
-    "title artists"
-    "image par"
-    "button par";
+    "title   artists"
+    "image   paragraphs"
+    "button  paragraphs";
 }
+
 
 .places__title {
   grid-area: title;
   font-family: "Inter", sans-serif;
   font-weight: 900;
   font-size: 72px;
-  line-height: 1.1; /* Decimal para títulos según mejores prácticas */
+  line-height: 1.1;
   margin: 0;
 }
+
 
 .places__image-wrapper {
   grid-area: image;
   width: 100%;
-  aspect-ratio: 1 / 1;
   overflow: hidden;
 }
 
 .places__image {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 6px;
-  /* Sombreado solicitado en el brief */
+  display: block;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
   transition: opacity 0.3s ease;
 }
 
 .places__image:hover {
-  opacity: 0.8; /* Estado Hover solicitado */
+  opacity: 0.8;
 }
+
 
 .places__button {
   grid-area: button;
@@ -57,19 +60,18 @@
   font-size: 18px;
   font-weight: 600;
   color: #fff;
-  /* Degradado solicitado en el brief */
   background: linear-gradient(90deg, #0278fe 0%, #003a7b 100%);
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  max-width: 260px;
   transition: opacity 0.3s ease;
 }
 
 .places__button:hover {
-  opacity: 0.8; /* Efecto Hover para botones */
+  opacity: 0.8;
 }
+
 
 .places__artists {
   grid-area: artists;
@@ -77,20 +79,24 @@
 }
 
 .places__artists-heading {
+  display: block;
   font-size: 12px;
   color: #aaa;
   letter-spacing: 3px;
-  line-height: 1.5; /* Valor exacto solicitado */
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 6px;
 }
 
 .places__artist {
   margin: 0;
   font-size: 18px;
-  line-height: 1.5; /* Valor exacto solicitado */
+  line-height: 1.5;
 }
 
+
 .places__paragraphs {
-  grid-area: par;
+  grid-area: paragraphs;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -99,42 +105,53 @@
 .places__paragraph {
   margin: 0;
   font-size: 18px;
-  line-height: 1.5; /* Valor exacto solicitado en el brief */
+  line-height: 1.5;
 }
 
-/* Tablet (768px) */
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 768px) {
+  .places {
+    gap: 56px;
+    margin-bottom: 80px;
+  }
+
   .places__item {
-    grid-template-columns: repeat(2, 1fr); /* Uso de fr para ser responsivo */
-    grid-template-areas:
-      "title artists"
-      "image par"
-      "button par";
+    grid-template-columns: 1fr 1fr;
     column-gap: 28px;
+    grid-template-areas:
+      "title      artists"
+      "image      paragraphs"
+      "button     paragraphs";
   }
 
   .places__title {
     font-size: 42px;
   }
+
+  .places__button {
+    font-size: 16px;
+    padding: 14px;
+  }
 }
 
-/* Móvil (320px) - Unificado para evitar errores de orden */
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 425px) {
   .places {
     gap: 40px;
     margin-bottom: 64px;
+    padding: 0 16px;
   }
 
   .places__item {
     grid-template-columns: 1fr;
-    /* Orden idéntico al diseño de Figma para 320px */
+    row-gap: 20px;
+    
     grid-template-areas:
       "title"
-      "image"
       "artists"
-      "par"
+      "image"
+      "paragraphs"
       "button";
-    row-gap: 24px;
   }
 
   .places__title {
@@ -142,7 +159,12 @@
   }
 
   .places__button {
-    max-width: 100%;
-    width: 100%; /* El botón ocupa el ancho disponible */
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .places__paragraph {
+    font-size: 16px;
   }
 }

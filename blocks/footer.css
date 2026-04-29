@@ -1,11 +1,35 @@
+
+ 
 .footer {
-  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 50px 0;
   box-sizing: border-box;
 }
-
+ 
 .footer__copyright {
+  font-family: "Inter", sans-serif;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14; 
+  color: #fff;
+  opacity: 0.7;
+}
+ 
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 36px 0;
+  }
+}
+ 
+
+@media screen and (max-width: 425px) {
+  .footer {
+    padding: 24px 0;
+  }
+ 
+  .footer__copyright {
+    font-size: 12px;
+  }
 }

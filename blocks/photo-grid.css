@@ -1,21 +1,20 @@
-/* Bloque Photo Grid actualizado según Sprint 6 */
+
 .photo-grid {
-  max-width: 1184px; 
-  margin: 0 auto 92px; 
-  display: grid;
-  /* Usamos fr para flexibilidad total */
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 16px; 
+  max-width: 1184px;
+  margin: 0 auto 92px;
   padding: 0;
   list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 16px;
 }
 
 .photo-grid__item {
   width: 100%;
-  height: 284px; 
+  aspect-ratio: 4 / 3;  
   object-fit: cover;
   display: block;
-  /* El brief menciona prestar atención a los estados hover */
   transition: opacity 0.3s ease;
 }
 
@@ -23,30 +22,20 @@
   opacity: 0.8;
 }
 
-/* Tablet: 768px */
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 768px) {
   .photo-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
-    /* Márgenes laterales según diseño para 768px */
     margin: 0 24px 88px;
-  }
-  
-  .photo-grid__item {
-    height: 352px; 
   }
 }
 
-/* Móvil: 320px (ajustado a 767px para consistencia) */
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 425px) {
   .photo-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 12px;
     margin: 0 16px 64px;
-  }
-  
-  .photo-grid__item {
-    /* Altura ajustada para que en pantallas pequeñas no se vea gigante */
-    height: 200px; 
   }
 }
